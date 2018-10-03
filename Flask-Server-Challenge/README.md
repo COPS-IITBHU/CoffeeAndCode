@@ -20,12 +20,12 @@ API End Point | Type | Required Body Params   | Required Return Value
 ### Level 1 - Database Intregration
 Create a simple Flask server that with some basic methods - maintain a serial list of tasks(numbered 1,2,3...). You're free to keep the database local or hosted somewhere.
 
-API End Point | Type | Required Body Params   | Required Return params(apart from `status`)    |Description
+API End Point | Type | Body Params   | Return value(apart from `status`)    |Description
 --------------|------|--------                | ------------------------- | -------------
-/list_all     | GET  | NA                     | list of all tasks  | Get the list of tasks to be done
+/list_all     | GET  | NA                     | task[](list of strings)  | Get the list of tasks to be done
 /append       | POST | task(string)           | NA | Append a task to the list
-/insert       | POST | task(string), index(int)| Insert a task between indices (index,index+1)
-/delete       | DELETE | index(int)           | Delete task at given index. Return 
+/insert       | POST | task(string), index(int)| NA | Insert a task between indices (index,index+1)
+/delete       | DELETE | index(int)           | task(string) | Delete task at given index. Return the deleted task
 
 
 ### Resources
