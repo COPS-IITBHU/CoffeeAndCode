@@ -1,8 +1,13 @@
 ## CoffeeAndCode
 
-Weekly fun development challenges for newbies. Maintained by Dev Group, COPS, IIT (BHU) Varanasi.  
-+ Make a pull request to challenges in order to submit code for review.
-+ There are several levels for every challenge. Try to solve max no of them
+Weekly fun development challenges, presented by Dev Group, COPS, IIT (BHU) Varanasi.  
+
+Help Ada and her team in planning `CoffeeAndCode`, the weekly developer meetup at `HackerDen`.
+
+### How to participate
++ Each challenge requires you to develop an app( web, android, desktop) or a script for solving a particular problem
++ Make a pull request to challenges in order to submit your code for review.
++ There are several levels for every challenge. Target to solve all of them
 
 
 Facebook             |  Medium
