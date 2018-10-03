@@ -4,6 +4,8 @@ Ada wants to plan the next developers meetup. As tasks stack up, she thinks that
 
 She recalls she had frontend for a simple Android ToDo List App she developed in a previous dev meet. But she lacks the backend for it. Since she has a lot of work to do, she can't develop the server so soon.
 
+You may **develop the solutions in groups**.
+
 ## Task 
 Her Ada by developing a simple Flask web server for her ToDo list app.
 
@@ -42,8 +44,26 @@ API End Point | Type | Body Params   | Return value(apart from `status`)    |Des
 **Note**: Refer resources for details about base64. Its important for sending media data over REST APIs
 
 
+### Level 3 - Medium - File Hosting
+Ada wants to clip additional data with a task, like an image memo or a PDF invoice. 
 
-### Level 3 - Hard - Undo/Redo Features
+Adapt the existing endpoints to meet the requirements. Now tasks are no longer strings, but a custom data type.
+```
+object Task:
+    string task
+    string meta-data-url = "" // by default empty
+```
+And the end points are changed as follows(with usual meanings)
+
+API End Point | Type | Body Params   | Return value(apart from `status`)
+--------------|------|--------                | ------------------------- 
+/list_all     | GET  | NA                     | task{}(list of `Task` objects)  
+/append       | POST | task(string), meta-data(base64 encoded data)           | NA 
+/insert       | POST | task(string), meta-data(base64 encoded data) ,index(int)| NA
+/delete       | DELETE | index(int)           | task(string)
+
+
+### Level 4 - Hard - Undo/Redo Features
 Ada types really bad(thats why she prefer to use voice). And also she prefers undoing typing a task rather than correcting it. 
 
 Manage the history of tasks entered and deleted. In this sense, `undo` means going one step back in history(which might mean deleting a task or restoring a deleted task) and `redo` means one step in future. This might seem easy at first glance, but *you'll need to develop a mini git of your own!*. There are many ways to version data. Refer [this](https://homes.cs.washington.edu/~mernst/advice/version-control.html) and [this article](https://www.atlassian.com/git/tutorials/what-is-version-control) for more.
