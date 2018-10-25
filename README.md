@@ -1,6 +1,6 @@
 ## CoffeeAndCode
 
-Weekly fun development challenges, presented by Dev Group, COPS, IIT (BHU) Varanasi.  
+Weekly fun development challenges, presented by _Dev Group_, COPS, IIT (BHU) Varanasi.  
 
 Help Ada and her team in planning `CoffeeAndCode`, the weekly developer meetup at `HackerDen`.
 
