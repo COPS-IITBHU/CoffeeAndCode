@@ -1,0 +1,9 @@
+l=10
+def sum():
+    # l=5
+    global l
+    m=8
+    l=l+5
+    print(m,l)
+
+sum()
