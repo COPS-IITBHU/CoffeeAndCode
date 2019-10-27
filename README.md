@@ -13,3 +13,5 @@ Help Ada and her team in planning `CoffeeAndCode`, the weekly developer meetup a
 Facebook             |  Medium
 :-------------------------:|:-------------------------:
 [![COPS Facebook Page](http://icons-for-free.com/icon/download-facebook_icon-344524.png)](https://www.facebook.com/cops.iitbhu/)  |  [![COPS Medium Page](http://icons-for-free.com/icon/download-blog_medium_icon-345952.png)](https://www.facebook.com/cops.iitbhu/)
+
+Happy Coding!!
